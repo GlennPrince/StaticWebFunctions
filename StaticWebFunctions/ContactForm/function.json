@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "name": "mail",
+      "type": "sendGrid",
+      "apiKey": "SENDGRID_API_KEY",
+      "to": "CONTACT_TO_ADDRESS",
+      "direction": "out"
+    }
+  ]
+}
